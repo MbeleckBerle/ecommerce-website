@@ -1,27 +1,19 @@
 "use client";
+import "tailwindcss";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-import Pagination from "@/app/ui/invoices/pagination";
 import Search from "@/app/ui/search";
-import Table from "@/app/ui/invoices/table";
-import { CreateInvoice } from "@/app/ui/invoices/buttons";
-import { lusitana } from "@/app/ui/fonts";
-import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
-import { Suspense } from "react";
-
-import "tailwindcss";
 
 export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <div className="justify-items-center-safe pt-10 columns: columns-3 gap-4 color: bg-amber-50 text-black height: h-20">
+    <div className="justify-items-center-safe pt-10 columns: columns-3 color: bg-white text-black height: h-23 border-2 border-gray-200">
       <div className="">
         <Link
           href="/exclusive"
-          className="font-bold mr-4 font-size: text-2xl text-black text-2xl"
+          className="font-bold mr-4 font-size: text-2xl text-black"
         >
           <button className="font-size: text-2xl">Exclusive</button>
         </Link>
@@ -32,8 +24,8 @@ export function Navigation() {
           href="/home"
           className={
             pathname === "/home"
-              ? " underline underline-offset-8 font-size: text-xl"
-              : "text-black mr-1.5"
+              ? "font-bold underline underline-offset-8 font-size: text-xl"
+              : "text-black "
           }
         >
           Home
@@ -42,8 +34,8 @@ export function Navigation() {
           href="/contact"
           className={
             pathname === "/contact"
-              ? " underline underline-offset-8 font-size: text-xl"
-              : "text-black mr-1.5"
+              ? "font-bold underline underline-offset-8 font-size: text-xl"
+              : "text-black "
           }
         >
           Contact
@@ -52,24 +44,27 @@ export function Navigation() {
           href="/about"
           className={
             pathname === "/about"
-              ? " underline underline-offset-8 font-size: text-xl"
-              : "text-black mr-1.5"
+              ? "font-bold underline underline-offset-8 font-size: text-xl"
+              : "text-black "
           }
         >
           About
         </Link>
-        {/* <Link
+        <Link
           href="/signup"
           className={
             pathname === "/signup"
-              ? " underline underline-offset-8 font-size: text-xl"
-              : "text-black mr-1.5"
+              ? " underline underline-offset-8 font-size: text-xl font-bold"
+              : "text-black "
           }
         >
           SignUp
-        </Link> */}
+        </Link>
       </div>
-      <div>Search/cart</div>
+      <div className="justify-items-center-safe">
+        <Search />
+        {/* <input className="" defaultValue="What are you looking for?" /> */}
+      </div>
     </div>
   );
 }
