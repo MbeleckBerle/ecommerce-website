@@ -9,10 +9,10 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <div className="pt-10 columns: columns-3 color: bg-white text-black height: h-23 border-b-2 border-gray-200">
+    <div className=" pt-30 columns: columns-3 color: bg-white text-black ">
       <div className="text-left w-60">
         <Link href="/exclusive" className="font-bold  mr-4  text-black">
-          <button className="font-size: text-5xl">Exclusive</button>
+          <button className="text-5xl">Exclusive</button>
         </Link>
       </div>
 
@@ -21,8 +21,8 @@ export function Navigation() {
           href="/home"
           className={
             pathname === "/home"
-              ? "font-bold underline underline-offset-8 font-size: text-xl"
-              : "text-black "
+              ? "font-bold underline underline-offset-8 font-size: text-4xl"
+              : "text-black text-4xl"
           }
         >
           Home
@@ -31,8 +31,8 @@ export function Navigation() {
           href="/contact"
           className={
             pathname === "/contact"
-              ? "font-bold underline underline-offset-8 font-size: text-xl"
-              : "text-black "
+              ? "font-bold underline underline-offset-8 font-size: text-4xl"
+              : "text-black text-4xl"
           }
         >
           Contact
@@ -41,8 +41,8 @@ export function Navigation() {
           href="/about"
           className={
             pathname === "/about"
-              ? "font-bold underline underline-offset-8 font-size: text-xl"
-              : "text-black "
+              ? "font-bold underline underline-offset-8 font-size: text-4xl"
+              : "text-black text-4xl"
           }
         >
           About
@@ -51,8 +51,8 @@ export function Navigation() {
           href="/signup"
           className={
             pathname === "/signup"
-              ? " underline underline-offset-8 font-size: text-xl font-bold"
-              : "text-black "
+              ? " underline underline-offset-8 font-size: text-4xl font-bold"
+              : "text-black text-4xl"
           }
         >
           SignUp

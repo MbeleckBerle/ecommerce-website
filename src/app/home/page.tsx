@@ -10,16 +10,17 @@ import { Featured } from "@/components/home/featured";
 export default function Home() {
   const router = useRouter();
   return (
-    <body>
+    <div className="px-90">
       <div className="">
-        <Top />
+        <div className="">
+          <Top />
+        </div>
+        <Today />
+        <Categories />
+        <ThisMonth />
+        <Explore />
+        <Featured />
       </div>
-
-      <Today />
-      <Categories />
-      <ThisMonth />
-      <Explore />
-      <Featured />
-    </body>
+    </div>
   );
 }

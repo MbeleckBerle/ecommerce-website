@@ -18,18 +18,24 @@ export function Top() {
 
   const router = useRouter();
   return (
-    <div className="h-90 bg-white flex ">
-      <div className="border-r-2 border-gray-200 w-60 h-80">
-        <ul className=" text-3xl">
+    <div className="h-1/2 w-full flex ">
+      <div className="border-r-2 h-full border-gray-200 w-1/4">
+        <ul className="h-full  pt-20 text-4xl">
           {categories.map((category) => (
-            <li className="mt-2" key={category}>
+            <li className="mt-7" key={category}>
               {category}
             </li>
           ))}
         </ul>
       </div>
-      <div className="w-full place-content-center m-10">
-        <Image className="place-self-center" src={image} alt="image" />
+      <div className=" w-full place-content-center m-20">
+        <Image
+          className="place-self-center"
+          src={image}
+          alt="image"
+          // width={1900}
+          // height={1080}
+        />
       </div>
     </div>
   );
