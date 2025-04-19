@@ -9,17 +9,14 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <div className="justify-items-center-safe pt-10 columns: columns-3 color: bg-white text-black height: h-23 border-2 border-gray-200">
-      <div className="">
-        <Link
-          href="/exclusive"
-          className="font-bold mr-4 font-size: text-2xl text-black"
-        >
-          <button className="font-size: text-2xl">Exclusive</button>
+    <div className="pt-10 columns: columns-3 color: bg-white text-black height: h-23 border-b-2 border-gray-200">
+      <div className="text-left w-60">
+        <Link href="/exclusive" className="font-bold  mr-4  text-black">
+          <button className="font-size: text-5xl">Exclusive</button>
         </Link>
       </div>
 
-      <div className="grid grid-cols-4 gap-20 h-5">
+      <div className=" justify-items-center grid grid-cols-4 gap-20 h-5">
         <Link
           href="/home"
           className={

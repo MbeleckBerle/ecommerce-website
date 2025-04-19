@@ -1,17 +1,25 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { Top } from "@/components/home/top";
+import { Today } from "@/components/home/today";
+import { Categories } from "@/components/home/categories";
+import { ThisMonth } from "@/components/home/this_month";
+import { Explore } from "@/components/home/explore";
+import { Featured } from "@/components/home/featured";
 
 export default function Home() {
   const router = useRouter();
   return (
-    <div>
-      <h1>Home Page</h1>
-      <button
-        onClick={() => router.push("/")}
-        className="bg-blue-500 text-white p2 rounded-md"
-      >
-        Go home
-      </button>
-    </div>
+    <body>
+      <div className="">
+        <Top />
+      </div>
+
+      <Today />
+      <Categories />
+      <ThisMonth />
+      <Explore />
+      <Featured />
+    </body>
   );
 }
