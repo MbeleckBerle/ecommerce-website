@@ -9,7 +9,7 @@ import { Today } from "@/components/home/today/today";
 
 export default function Home() {
   return (
-    <div className="px-90">
+    <div className="px-90 flex flex-col">
       <div className="">
         <div className="">
           <Top />

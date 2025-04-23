@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 export function Countdown() {
   const router = useRouter();
   return (
-    <div>
+    <div className="font-bold">
       <div className="grid auto-cols-max grid-flow-col gap-5 text-center">
         <div className="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
           <span className="countdown font-mono text-5xl">

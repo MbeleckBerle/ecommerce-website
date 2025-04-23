@@ -11,7 +11,7 @@ export default function Search() {
           <input
             type="search"
             id="default-search"
-            className="h-full block w-full p-4 text-lg  border-gray-600 rounded-sm bg-gray-200 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-500 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="h-full block w-full p-4 text-lg  border-gray-600 rounded-sm bg-gray-200 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-500 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="What are you looking for?"
             required
           />
