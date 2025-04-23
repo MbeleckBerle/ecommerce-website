@@ -18,7 +18,7 @@ export function Top() {
 
   const router = useRouter();
   return (
-    <div className="h-1/2 w-full flex ">
+    <div className="h-1/2 w-full flex pb-50">
       <div className="border-r-2 h-full border-gray-200 w-1/4">
         <ul className="h-full  pt-20 text-4xl">
           {categories.map((category) => (

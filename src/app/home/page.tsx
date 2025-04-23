@@ -1,14 +1,13 @@
-"use client";
-import { useRouter } from "next/navigation";
+// "use client";
 import { Top } from "@/components/home/top";
-import { Today } from "@/components/home/today";
 import { Categories } from "@/components/home/categories";
 import { ThisMonth } from "@/components/home/this_month";
 import { Explore } from "@/components/home/explore";
 import { Featured } from "@/components/home/featured";
+import { Footer } from "@/components/home/footer";
+import { Today } from "@/components/home/today/today";
 
 export default function Home() {
-  const router = useRouter();
   return (
     <div className="px-90">
       <div className="">
@@ -20,6 +19,9 @@ export default function Home() {
         <ThisMonth />
         <Explore />
         <Featured />
+        <div>
+          <Footer />
+        </div>
       </div>
     </div>
   );

@@ -10,8 +10,8 @@ export function Navigation() {
 
   return (
     <div className=" pt-30 columns: columns-3 color: bg-white text-black ">
-      <div className="text-left w-60">
-        <Link href="/exclusive" className="font-bold  mr-4  text-black">
+      <div className="">
+        <Link href="/exclusive" className="font-bold  text-black">
           <button className="text-5xl">Exclusive</button>
         </Link>
       </div>
@@ -58,7 +58,7 @@ export function Navigation() {
           SignUp
         </Link>
       </div>
-      <div className="justify-items-center-safe">
+      <div className="float-right">
         <Search />
         {/* <input className="" defaultValue="What are you looking for?" /> */}
       </div>
