@@ -7,7 +7,14 @@ const nextConfig: NextConfig = {
 // next.config.js
 module.exports = {
   images: {
-    domains: ["i.imgur.com", "placeimg.com"], // <- add the domain from the image URL
+    domains: [
+      "i.imgur.com",
+      "placeimg.com",
+      "images.pexels.com",
+      "placehold.co",
+      "www.bing.com",
+      "pravatar.cc",
+    ], // <- add the domain from the image URL
   },
 };
 

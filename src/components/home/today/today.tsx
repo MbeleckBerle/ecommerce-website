@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { Countdown } from "../countdown";
 import { TodayItems } from "./todayItems";
+import CustomButton from "@/components/button";
 
 export function Today() {
   // const router = useRouter();
@@ -24,6 +25,12 @@ export function Today() {
           <Countdown />
         </div>
         <TodayItems />
+        <div className="place-self-center mt-40">
+          {/* <button className="h-20 rounded-md w-100 bg-red-500  text-3xl font-bold hover:not-focus:bg-indigo-700">
+            View All Products
+          </button> */}
+          <CustomButton text="View All Products" />
+        </div>
       </div>
     </div>
   );
