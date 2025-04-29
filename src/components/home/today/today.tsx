@@ -7,7 +7,7 @@ export function Today() {
   // const router = useRouter();
 
   return (
-    <div className="h-100 pb-200">
+    <div className="">
       <div>
         <div className="p-5 ">
           <div className="flex">
@@ -23,7 +23,6 @@ export function Today() {
           </h1>
           <Countdown />
         </div>
-
         <TodayItems />
       </div>
     </div>
