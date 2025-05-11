@@ -21,4 +21,3 @@ const CustomButton: React.FC<CustomButtonProps> = ({ text, onClick }) => {
 };
 
 export default CustomButton;
-asdf;
